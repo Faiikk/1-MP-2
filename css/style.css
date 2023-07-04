@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("../img/fond.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@font-face {
+    font-family:"VINOCOLPO";
+    src: url(../typo/VINOCOLPO.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.typo{
+    font-family: "VINOCOLPO";
+}
+
+.d-flex{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.spacebetween{
+    justify-content: space-between;
+}
+
+.alignitem{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* HEADER */
+
+h1{
+    font-family: "VINOCOLPO" ;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.headerlist{
+    list-style: none;;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.headertext{
+    text-decoration: none;
+    color: black;
+    border: solid black 0.15rem;
+    padding: 0.5rem;
+}
+
+  .headertext:hover{
+    color: white;
+    background-color: #a10e0e;
+    transition: 0.3s;
+  }
+
+
+/* FIN HEADER */
+
+/* MAIN */
+
+/* section 1 */
+
+#video{
+    width: 100%;  
+}
+
+/* fin section 1 */
+
+/* section 2 */
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+
+.glb { 
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+model-viewer{
+    width: 400px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titre { 
+    grid-area: 1 / 2 / 3 / 3;
+    font-size: 4rem;
+    line-height: 11rem;
+    margin-right: 1.5rem;
+}
+
+.titre p{
+    margin-top: 4rem;
+}
+
+.tracteur{
+    grid-area: 2 / 1 / 5 / 2; 
+    margin-left: 1.5rem;
+}
+
+.tracteur img{
+    width: 95%;
+}
+
+.texte{
+    grid-area: 3 / 2 / 4 / 3;;  
+    font-size: 2rem; 
+    margin-right: 1.5rem; 
+    margin-top: -6rem; 
+}
+
+.texte p{
+    margin-inline: 2rem;
+    margin-bottom: 2rem;   
+}
+
+.dessin{
+    grid-area: 5 / 1 / 6 / 2;
+    margin-left: 5.5rem;
+}
+
+.dessin img{
+    margin-bottom: 10rem;
+}
+
+.tete{
+    grid-area: 4 / 2 / 6 / 3;
+    margin-right: 1.5rem;
+    margin-top: -5rem;
+}
+
+.tete img{
+    width: 100%;
+}
+
+/* fin section 2 */
+
+/* Section 3 */
+
+.animelist li {
+    font-size: 3rem;
+    border: solid black 0.2rem;
+    border-radius: 2rem;
+    padding: 0.6rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1.3rem;
+    cursor: default;    
+}
+
+.animelist li:hover{
+    background-color: #a10e0e;
+    color: white;
+    transition: 0.3s;
+}
+
+.animelist ul{
+    width: 50%;
+    height: 400px;
+    justify-content: center;
+    margin-right: 15%;  
+}
+
+.lettre{
+    margin-left: 1.5rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+.typovue{
+    font-size: 25rem ;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.pellicule{
+    width: 25%;  
+}
+
+.pellicule:hover{
+    opacity: 80%;
+}
+
+/* Fin section 3 */
+
+/* section 4 */
+
+.letterchange{
+    font-size: 10rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.change:hover{
+    font-family: "VINOCOLPO";
+    color: #a10e0e;
+    cursor:default;
+}
+
+.paysagevygne{
+    margin-bottom: 15rem;
+    width: 100%;
+}
+
+/* fin section 4 */
+
+/* section 5 */
+
+input{
+    text-align: center;
+    font-size: 7rem;
+    padding: 0.4rem;
+    background: none;
+    border:  solid black 0.5rem;
+    cursor:text;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 15rem;
+}
+
+/* fin section 5 */
+
+
+/* section 6 */
+
+.rougeblanc{
+    margin-top: 15rem;
+    font-size: 4.9rem;
+    text-align: center;
+}
+
+.red:hover{
+    color: #a10e0e;
+}
+
+.white:hover{
+    color: rgb(255, 255, 255);
+}
+
+/* fin section 6 */
+
+/* FIN MAIN */
+
+/* FOOTER */
+
+footer{
+    margin-top: 17rem;
+}
+
+.achat{
+    font-size: 3rem;
+    border: solid black 0.3rem;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.achat:hover{
+    background-color: #a10e0e;
+    color: white;
+    transition: 0.3s;
+}
+
+.prenom{
+    margin-top: 6rem;
+    font-size: 1.5rem;
+}
+
+.politique{
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 7rem;
+}
+
+.politique a:hover{
+    color: #a10e0e;
+    transition: 0.3s;
+}
+
+.reseaux{
+    margin-right: 1.5rem;
+    margin-top: 4.7rem;
+}
+.insta{
+    width: 3.5rem;
+    margin-right: 1.5rem;
+}
+
+.facebook{
+    width: 2.5rem;
+    margin-right: 1.5rem;
+}
+
+.twitter{
+    width: 2.5rem;
+}
+/* FIN FOOTER */
+
+@media screen and (max-width:600px){
+
+   ul .headerlist{
+    display: none;
+   }
+
+   h1{
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+   .glb{
+    margin-left: 4rem;
+   }
+
+   .titre{
+    display: flex;
+    line-height: 8rem;
+    grid-area: 2 / 1 / 1 / 3;
+    font-size: 2.3rem;
+    height: 10%;
+    margin-left: 1.5rem;
+   }
+
+   .tracteur{
+    width: 95%;
+    grid-area: 3 / 1 / 2/ 3;
+   }
+
+   .texte{
+    font-size: 1.4rem;
+    grid-area: 3 / 1 / 4 / 2; 
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+   .dessin{
+    display: none;
+   }
+
+   .tete{
+    width: 98%;
+    grid-area: 4/ 1 / 6 / 1;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: -14rem;
+   }
+
+   .animelist ul li{
+    font-size: 1rem;
+   }
+
+   .animelist ul{
+    width: 100%;
+    margin-left: 10%;
+    margin-top: -3.5rem;
+   }
+
+   .typovue{
+    display: none;
+   }
+
+   .paysagevygne img{
+    width: 100%;
+    margin-top: -2rem;
+   }
+
+   .change{
+    font-size: 4.6rem;
+    margin-top: -2rem;
+   }
+
+   input{
+    font-size: 5rem;
+    width: 100%;
+    height: 10%;
+    padding: 2rem;
+    margin-top: -3rem;
+   }
+
+   .rougeblanc{
+    font-size: 3.5rem;
+   }
+   
+}
+
